@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /*'Inter'*/
 *,
 *::after,
@@ -9,9 +9,11 @@
 }
 
 :root {
-    --background-main-color: #c8d1af;
-    --main-text-color: #325956;
-    --main-font-family: "Inter";
+  --background-main-color: #c8d1af;
+  --main-text-color: #325956;
+  --menu-text-color: rgba(87, 114, 112, 0.92);
+  --menu-box-text-color: rgb(241, 230, 225);
+  --main-font-family: "Inter";
   scroll-behavior: smooth;
 }
 
