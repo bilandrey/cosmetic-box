@@ -1,0 +1,53 @@
+.header__hero {
+    padding: 100px 24px 30px 24px;
+}
+.header__hero__title {
+    font-size : 3.5rem;
+    font-family: var(--second-font-family), sans-serif;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.header__hero__description {
+    margin-top: 30px;
+    font-size: calc(1rem + 3px);
+    font-family: var(--main-font-family), sans-serif;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--menu-text-color);
+}
+.header__hero__price {
+    margin-top: 20px;
+}
+.header__hero__price-text {
+    display: inline;
+    font-size: calc(1rem + 1px);
+    font-family: var(--main-font-family), sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--menu-text-color);
+}
+.header__hero__price-value {
+    display: inline;
+    font-size: 2rem;
+    font-family: var(--main-font-family), sans-serif;
+    font-weight: 700;
+    color: var(--main-text-color);
+}
+.header__socials {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.header__icon {
+    width: 30px;
+    height: 30px;
+    color: var(--main-text-color);
+}
+
+.header__icon__logo,
+.header__icon__border {
+    fill: currentColor;
+}
+.header__icon__outer {
+    fill: none;
+}

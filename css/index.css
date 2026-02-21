@@ -1,2 +1,10 @@
 @import "global.css";
-@import "global.header.nav.css"
+@import "global.header.nav.css";
+@import "global.header.hero.css";
+
+.site-header {
+  background-image: url("../img/cover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-/*'Inter'*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+/* Chivo */
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Istok Web */
 *,
 *::after,
 *::before {
@@ -13,7 +15,8 @@
   --main-text-color: #325956;
   --menu-text-color: rgba(87, 114, 112, 0.92);
   --menu-box-text-color: rgb(241, 230, 225);
-  --main-font-family: "Inter";
+  --main-font-family: "Chivo";
+  --second-font-family: "Istok Web";
   scroll-behavior: smooth;
 }
 
