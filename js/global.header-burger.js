@@ -1,6 +1,8 @@
 // Get DOM elements
 const burger = document.querySelector(".burger__box");
 const menu = document.querySelector(".header__menu");
+const order = document.querySelector(".header__order");
+const nav = document.querySelector(".header__nav");
 const menuLinks = document.querySelectorAll(".header__menu__item");
 const header = document.querySelector(".site-header");
 
@@ -8,16 +10,20 @@ const header = document.querySelector(".site-header");
 function toggleMenu() {
   burger.classList.toggle("is-active");
   menu.classList.toggle("is-open");
+  order.classList.toggle("is-open");
+  nav.classList.toggle("is-open");
   document.body.classList.toggle("no-scroll");
-  header.classList.toggle("is-open")
+  header.classList.toggle("is-open");
 }
 
 // Close menu function
 function closeMenu() {
   burger.classList.remove("is-active");
   menu.classList.remove("is-open");
+  order.classList.remove("is-open");
+  nav.classList.remove("is-open");
   document.body.classList.remove("no-scroll");
-  header.classList.remove("is-open")
+  header.classList.remove("is-open");
 }
 
 // Add click event listener to burger button

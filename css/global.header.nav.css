@@ -1,6 +1,8 @@
 .header__nav {
-  position: relative;
-  padding: 30px 24px 30px clamp(24px, 10vw, 200px);
+  padding: 30px clamp(24px, 8vw, 200px) 30px clamp(24px, 8vw, 200px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   display: flex;
@@ -16,6 +18,7 @@
   align-self: center;
   width: 24px;
   height: 16px;
+  display: none;
 }
 .burger__line {
   position: absolute;
@@ -36,53 +39,81 @@
   bottom: 0;
 }
 .header__menu {
-  padding-top: 30px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  box-sizing: border-box;
-  height: 100vh;
-  z-index: 99;
-  background-color: var(--background-main-color);
-  overflow-x: hidden;
-  display: none;
-  flex-direction: column;
-  align-items: center;
+  display: flex;
 }
+
 .header__menu__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
 }
 .header__menu__item,
-.header__menu__order {
+.header__order {
   font-size: calc(1rem + 1px);
   font-family: var(--main-font-family), sans-serif;
   font-weight: 500;
   color: var(--menu-text-color);
-  z-index: 100;
 }
 
-.header__menu__order {
+.header__order {
   padding: 14px 20px;
   font-size: calc(1rem - 2px);
-  margin-top: 30px;
 
   background-color: var(--main-text-color);
-  .header__menu__order__text {
+  .header__order__text {
     color: var(--menu-box-text-color);
     width: 190px;
     height: 43px;
   }
 }
 
+@media (max-width: 980px) {
+  .header__nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header__menu {
+    padding-top: 30px;
+    overflow-x: hidden;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__menu__list {
+    flex-direction: column;
+  }
+  .burger__box {
+    display: block;
+  }
+  .header__nav {
+    display: block;
+    gap: 0px;
+  }
+  .header__order {
+    
+    max-width: 190px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+  }
+}
+
 .header__menu.is-open {
   display: flex;
 }
+.header__order.is-open {
+  display: block;
+}
+.header__nav.is-open {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
 .burger__box.is-active .burger__line:nth-child(1) {
-  transform:translateY(350%) rotate(45deg);
+  transform: translateY(350%) rotate(45deg);
 }
 
 .burger__box.is-active .burger__line:nth-child(2) {
