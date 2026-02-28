@@ -1,5 +1,6 @@
 .header__hero {
-    padding: 100px 24px 30px 24px;
+    margin: 100px 24px 30px clamp(24px, 15vw, 400px);
+    max-width: 400px;
 }
 .header__hero__title {
     font-size : 3.5rem;

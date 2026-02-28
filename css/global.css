@@ -17,6 +17,7 @@
   --menu-box-text-color: rgb(241, 230, 225);
   --main-font-family: "Chivo";
   --second-font-family: "Istok Web";
+  --transition-speed: 0.3s;
   scroll-behavior: smooth;
 }
 
@@ -40,6 +41,9 @@ body {
   font-family: var(--main-font-family), sans-serif;
   color: var(--main-text-color);
   background-color: var(--background-main-color);
+}
+body.no-scroll {
+  overflow: hidden;
 }
 
 .container {
