@@ -1,5 +1,5 @@
 .header__nav {
-  padding: 30px clamp(24px, 8vw, 200px) 30px clamp(24px, 8vw, 200px);
+  padding: 30px var(--padding-global);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: max(20px, 2vw);
 }
 .header__menu__item,
 .header__order {
@@ -83,6 +83,7 @@
   }
   .header__menu__list {
     flex-direction: column;
+    gap: 20px;
   }
   .burger__box {
     display: block;

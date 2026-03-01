@@ -18,6 +18,7 @@
   --main-font-family: "Chivo";
   --second-font-family: "Istok Web";
   --transition-speed: 0.3s;
+  --padding-global: max(100px, -250px + 35vw);
   scroll-behavior: smooth;
 }
 
